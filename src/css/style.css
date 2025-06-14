@@ -370,14 +370,8 @@ footer {
 
 .services-container {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 3.5rem;
-    max-width: 1200px;
-    margin: 0 auto;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 0 2rem;
+    flex-direction: column; /* Susun elemen secara vertikal */
+    align-items: center; /* Pusatkan elemen */
 }
 .services-more {
     display: flex;
@@ -608,7 +602,12 @@ footer {
     .hamburger {
         display: block;
     }
-     .services-right {
+    .services-container {
+        display: flex;
+        flex-direction: column; /* Susun elemen secara vertikal */
+    }
+
+    .services-right {
         order: -1; /* Memindahkan bagian Services ke paling atas */
     }
     .services-more {
@@ -970,10 +969,7 @@ footer {
         justify-content: center;
         align-items: flex-start;
         gap: 3.5rem;
-
-      
     }
-
     .services-left, .services-right {
         flex: 1 !important; 
         display: flex !important; 
